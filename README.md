@@ -30,7 +30,9 @@ This widget displays:
 ## Installation
 Simply copy the code to a **PHP** file in /wp-content/mu-plugins , eg:
 > /var/www/html/wp-content/mu-plugins/clamav-wp-scan.php
+
 Download the file here: https://github.com/dionbl-wp/clamav-wp-scan/blob/main/clamav-wp-scan.php
+
 ## Why use this
 * No other MU-plugins required
 * No external dependencies
