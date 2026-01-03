@@ -1,12 +1,15 @@
 # Clam AV Word Press Scan
 ## Quick Intro
-This **plugin** will allow Wordpress to scan (using Clam AV) any files that are uploaded using the Wordpress *Media Library*.
+This **plugin** will:
+* allow Wordpress to scan (using Clam AV) any files that are uploaded using the Wordpress *Media Library* file import.
+* restrict uploading to administrator/editor
+* log the results and display in a widget
 
 You will need to install ClamAV
 
 This was tested on Ubuntu 24.04 // Wordpress 6.9
 
-## WHAT THIS FILE (CalmAV-Scan) DOES
+## WHAT THIS FILE (CalmAV-wp-scan) DOES
 ### Virus handling
 * Infected files are deleted immediately
 * An admin email is sent on infection
