@@ -7,7 +7,7 @@
 
 if (!defined('ABSPATH')) exit;
 
-define('CLAMAV_VERSION', '1.0');
+define('CLAMAV_VERSION', '1.0.1');
 define('CLAMAV_LOG', '/var/log/apache2/wp-upload-clamav-scan.log');
 define('CLAMAV_FORCE_ALLOW_FILE', WP_CONTENT_DIR . '/mu-plugins/force-allow-uploads.txt');
 
@@ -211,7 +211,7 @@ add_action('wp_dashboard_setup', function () {
 
             if (!empty($s['lockout_until']) && time() < $s['lockout_until']) {
                 echo "<p style='color:#b30000'><strong>Uploads locked until:</strong> " .
-                     date('Y-m-d H:i:s', $s['lockout_until']) . "</p>";
+                     wp_date('Y-m-d H:i:s', $s['lockout_until']) . "</p>";
             }
 
             echo "<hr><p><strong>Recommended actions:</strong></p>
