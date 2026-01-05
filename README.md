@@ -20,7 +20,7 @@ This will *restrict* the roles that can upload
 * To upload, you must have the role: administrator, editor
 * All other roles are BLOCKED from uploading: everyone else (get a clear on-screen error)
 ### Automatic upload lockout
-* If there are more than 3 infected files uploaded in a 30 minute window, then...
+* If there are more than 4 infected files uploaded in a 30 minute window, then...
 * Uploads are blocked for 3 hours
 * Emergency override: you can stop lockout by creating the file **/wp-content/mu-plugins/force-allow-uploads.txt** You might for example want to do this so you can continue uploading. When this file is present there is a warning message in the security widgetyou can 
 ## Dashboard widgets
